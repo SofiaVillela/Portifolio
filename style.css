@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --cor1: #231123;
+    --cor2: #C30F45;
+}
+
+
+html{
+    overflow-x: hidden
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: rgb(194, 15, 71, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navegar_bar a{
+    color: #231123;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out; 
+}
