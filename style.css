@@ -2,16 +2,19 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #ffe7b7  
 }
 
 :root{
     --cor1: #231123;
-    --cor2: #C30F45;
+    --cor2: #ffe7b7;
 }
 
 
 html{
+    font-size: 60%;
     overflow-x: hidden
 }
 
@@ -24,19 +27,98 @@ body{
     position: fixed;
     width: 100%;
     top: 0%;
-    background-color: rgb(194, 15, 71, 0.3);
+    padding: 24px;
+    background-color: #301830;
     backdrop-filter: blur(10px);
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+
+
 }
 
 
 .navegar_bar a{
-    color: #231123;
-    margin-left: 16px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 0.3s ease-in-out; 
+    color: #ffe7b7;
+    margin: 14px;
+    font-size: 20px;
+    font-weight: 1000;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 30px;
+    
+}
+
+
+.sobremim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px;
+
+}
+
+.conteudo h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.conteudo h3{
+    margin: 0, 5, 10, 10px;
+    font-size: 30px;
+}
+
+.conteudo p{
+    margin: 0, 10, 10, 10px;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align:justify;
+}
+
+.foto_perfil img{
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ffdd99;
+    transition: 0.4s ease-in-out;
+}
+.foto_perfil img:hover{
+    box-shadow: 0 0 18px #ffdd99,
+                0 0 22px #ffdd99;
+}
+
+.icons_redes_socias a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 3px;
+    background: transparent;
+    border: 2px solid #ffe7b7;
+    border-radius: 50%;
+    color: #ffe7b7;
+    margin: 9px 1px;
+    transition: 0.3s ease-in-out ;
+    text-decoration: none;
+}
+
+.icons_redes_socias a:hover {
+    color: white;
+    background-color: #231123;
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px #231123;
+    
+
 }
