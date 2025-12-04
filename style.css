@@ -4,7 +4,6 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Poppins";
-    color: #ffe7b7  
 }
 
 :root{
@@ -32,6 +31,7 @@ body{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
+        color: #ffe7b7;
 
 
 }
@@ -60,6 +60,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 90px;
+    color: #ffe7b7;
 }
 
 .conteudo{
@@ -119,6 +120,130 @@ section{
     background-color: #231123;
     transform: scale(1.2)translateY(-5px);
     box-shadow: 0 0 25px #231123;
-    
 
+}
+
+.hab_conteudo {
+    text-align: center;
+    font-size: 21px;
+    margin: 50px 0;
+}
+
+.habilidades, .projetos{
+    background-color: #231123;
+    color: #ffdd99;
+}
+
+.habilidades h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    font-size: 25px;
+}
+.habilidades h1, .projetos h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    font-size: 40px;
+
+}
+
+.certificadosss {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 40px;
+}
+
+.certificado_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #301830;
+    height: 450px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.certificado_box:hover{
+    color: #ffdd99;
+    background-color: #301830;
+    transform: scale(1.13)translateY(3px);
+
+}
+.informacao, .projeto_caixinha{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.informacao h3, .projeto_caixinha h3{
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+.informacao img{
+    width: 25vw;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+.informacao img:hover{
+    width: 28vw;
+}
+
+.projetos_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 20px;
+}
+.projeto_caixinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #301830;
+    height: 700px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+    
+}
+.projeto_caixinha p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 30px;
+}
+
+.projeto_caixinha img{
+    width: 75%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;;
+}
+.projeto_caixinha img:hover{
+    transform: scale(1.12)translateY(3px);
+}
+
+.link_projeto{
+    font-size: 25px;
+    width: 250px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffdd99;
+    background-color: #231123;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.link_projeto:hover{
+    transform: scale(1.14)translateY(3px);
+    box-shadow: 0 3px 10px #ffdd99;
 }
