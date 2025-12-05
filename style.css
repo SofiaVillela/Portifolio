@@ -53,7 +53,7 @@ section{
 }
 
 
-.sobremim{
+.inicio{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,6 @@ section{
 .conteudo{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: 40px;
 
 }
@@ -72,7 +71,12 @@ section{
 .conteudo h1{
     font-size: 45px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+.conteudo h2{
+    font-size: 30px;
+    font-weight: 700;
+
 }
 
 .conteudo h3{
@@ -80,18 +84,15 @@ section{
     font-size: 30px;
 }
 
-.conteudo p{
-    margin: 0, 10, 10, 10px;
-    font-size: 20px;
-    line-height: 1.8;
-    text-align:justify;
-}
 
 .foto_perfil img{
     width: 30vw;
     border-radius: 50%;
     box-shadow: 0 0 15px #ffdd99;
     transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .foto_perfil img:hover{
     box-shadow: 0 0 18px #ffdd99,
@@ -121,25 +122,121 @@ section{
 
 }
 
-.hab_conteudo {
+.cont_sobremim{
+    display: flex;
+    flex-direction: column;
+    background-color: #301830;
+    margin: 100px;
+    height: 450px;
+    border-radius: 30px;
+    gap: 20px;
+}
+.cont_sobremim p{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align:justify;
+    color: #ffdd99;
+}
+
+.comp_proj h1{
+    margin: 50px;
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffdd99;
+
+}
+
+.comp_proj_boxes{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 100px;
+}
+.comp_proj_boxes h2{
+    font-size: 30px;
+    color: #ffdd99;
+
+}
+
+.comp_proj_boxes p{
+    margin-top: 80px;
+    font-size: 28px;
+    color: #ffe7b7;
+}
+
+.comp_proj_boxes a{
+    margin-top: 100px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 200px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffdd99;
+    background-color: #231123;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.comp_proj_boxes a:hover{
+    transform: scale(1.12)translateY(3px);
+    color: #301830;
+    background-color: #ffdd99;
+}
+
+.competencias_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #301830;
+    height: 450px;
+    border-radius: 30px;
+    width: 450px;
+    
+}
+
+
+.proj_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #301830;
+    height: 450px;
+    border-radius: 30px;
+    width: 450px;
+    
+}
+
+.comp_conteudo {
     text-align: center;
     font-size: 21px;
     margin: 50px 0;
 }
 
-.habilidades, .projetos{
+.competencias, .projetos{
     background-color: #231123;
     color: #ffdd99;
 }
 
-.habilidades h2{
+.competencias h2{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 40px;
     font-size: 25px;
 }
-.habilidades h1, .projetos h1{
+.competencias h1, .projetos h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,6 +315,7 @@ section{
     font-weight: 400;
     text-align: justify;
     margin: 30px;
+    
 }
 
 .projeto_caixinha img{
@@ -225,6 +323,7 @@ section{
     overflow: hidden;
     border-radius: 10px;
     transition: 0.4s ease-in-out;;
+    margin-bottom: 15px;
 }
 .projeto_caixinha img:hover{
     transform: scale(1.12)translateY(3px);
