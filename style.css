@@ -33,9 +33,7 @@ body{
     justify-content: space-around;
         color: #ffe7b7;
 
-
 }
-
 
 .navegar_bar a{
     color: #ffe7b7;
@@ -233,6 +231,7 @@ section{
 }
 
 .link_projeto{
+    cursor: pointer;
     font-size: 25px;
     width: 250px;
     padding: 20px;
@@ -244,6 +243,77 @@ section{
 }
 
 .link_projeto:hover{
-    transform: scale(1.14)translateY(3px);
-    box-shadow: 0 3px 10px #ffdd99;
+    transform: scale(1.12)translateY(3px);
+    color: #301830;
+    background-color: #ffdd99;
+}
+
+.contato{
+    background-color: #231123;
+}
+
+.contato h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    font-size: 40px;
+    color: #ffdd99;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form .input-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; 
+}
+
+#form-contato span{
+    color: #ffdd99;
+    font-size: 22px;
+}
+
+form input{
+    width: 500px;
+    font-size: 15px ;
+    padding: 12px  20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+form input:focus{
+    background-color: #ffe7b7 ;
+}
+
+.contato .botao{
+    font-size: 25px;
+    width: 100px;
+    padding: 17px;
+    text-decoration: none;
+    color: #231123;
+    background-color: #ffdd99;
+    border-radius: 30px;
+    border: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.contato .botao:hover{
+    transform: scale(1.12)translateY(3px);
+    color: #ffdd99;
+    background-color: #301830;
+    border: none;
+}
+
+.form_formatar span{
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
 }
